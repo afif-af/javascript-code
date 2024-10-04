@@ -1,0 +1,61 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    height: 100vh;
+}
+.Appbody{
+    border: 3px dotted #d1d6d6;
+    width: 700px;
+    height: 500px;
+    background-color:white;
+    box-shadow: rgba(0,0,0,0.1) 0px 10px 50px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.Appbody.active{
+    border: 3px solid rgba(49, 168, 12);
+
+}
+.icon{
+    font-size: 100px;
+    color: rgba(13, 204, 45, 0.651);
+}
+.Appbody h3{
+    font-size: 30px;
+    font-weight: 500;
+    color: #333;
+}
+.Appbody span{
+    font-size: 25px;
+    font-weight: 500;
+    color:#333;
+    margin: 10px 0 15px 0;
+}
+.Appbody button{
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    background:#fff;
+    color:rgba(13,204,45,0.6541);
+    border-radius: 5px;
+    cursor: pointer;
+}
+.Appbody img{
+    height:100% ;
+    weight:100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
