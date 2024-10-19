@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="MyEvent('Load hoyse')">
+
+
+    <input onchange="MyEvent('change ')"/><br>
+    <input onkeydown="MyEvent('key change ')"/><br>
+    <input onkeyup="MyEvent('ke up change ')"/><br>
+
+    <button onclick="MyEvent('cli')"> cl</button>
+   
+
+
+<script>
+
+
+
+
+ var n= navigator.appCodeName;
+ document.write(navigator.geolocation);
+ document.write(n);
+ document.write(n);
+
+var country="bangladesh";
+document.write(country.charAt(5))
+
+
+
+
+
+
+
+  var ar=[334,45,76,82,54];
+  ar.splice(1,1)
+  document.write(ar)
+
+
+   
+   var arr=[334,45,76,82,54];
+   var result=arr.indexOf(76);
+   document.write(result +"<br>")
+   arr.sort()
+   document.write(arr)
+
+
+
+
+
+
+      var arr=[334,45,76,82,54]
+      arr.forEach(function(value){
+       document.write(value+ "<br>")
+      })
+      
+
+
+
+         var num=[30,32 ,45];
+        var result= num.findIndex(function(value){
+            return value<40;
+        })
+
+        document.write(result);
+
+
+
+    </script>
+    
+</body>
+</html>

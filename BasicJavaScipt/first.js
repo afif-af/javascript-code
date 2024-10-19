@@ -1,5 +1,8 @@
 console.log("hello world");
 
+var bd="Bangladesh";
+console.log(bd)
+
 var num =" afif afroz fahim"
 console.log(num.toUpperCase())
 
@@ -9,8 +12,9 @@ console.log(myDate.getDate())
 var fd=["adf","ja","asj"]
 fd.push("afif")
 fd.push(7)
+console.log(fd)
 console.log(fd.slice(2,4))
-for(var sum =1;sum<=20 ;sum++)
+for(var sum =1;sum<=7 ;sum++)
 {
     console.log(sum)
 }
