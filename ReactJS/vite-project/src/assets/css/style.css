@@ -1,0 +1,6 @@
+.active-item{
+    color: red;
+}
+.pending-item{
+    color: rgb(176, 233, 4);
+}
