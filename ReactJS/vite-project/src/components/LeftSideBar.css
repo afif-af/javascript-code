@@ -1,0 +1,50 @@
+.left-Sidebar {
+  width: 80px; /* Narrow sidebar */
+  background-color: #333;
+  height: 100vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0;
+}
+
+.nav-items {
+  list-style-type: none;
+  padding: 0;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  cursor: pointer;
+  position: relative;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.nav-item:hover {
+  background-color: #555; /* Background changes only on hover */
+}
+
+.nav-icon {
+  display: flex;
+  justify-content: center;
+  width: 40px;
+}
+
+.nav-title {
+  opacity: 0; /* Hide title by default */
+  position: absolute;
+  left: 70px; /* Position title to the right of the sidebar */
+  background-color: #333; /* Same background color as sidebar */
+  padding: 5px 10px;
+  border-radius: 5px;
+  white-space: nowrap;
+  font-size: 14px;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.nav-item:hover .nav-title {
+  opacity: 1; /* Show the title only when hovering over the item */
+}

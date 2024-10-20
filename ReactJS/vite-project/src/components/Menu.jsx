@@ -9,7 +9,7 @@ const Menu = () => {
           <NavLink className={({ isActive }) => isActive ? "active-item" : "pending-item"} to="/">Home</NavLink>
         </li>
         <li>
-          <NavLink className={({ isActive }) => isActive ? "active-item" : "pending-item"} to="/notfound">Not Found</NavLink>
+          <NavLink className={({ isActive }) => isActive ? "active-item" : "pending-item"} to="/notfound/rabbil/hasan">Not Found</NavLink>
         </li>
       </ul>
     </div>
