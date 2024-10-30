@@ -2,54 +2,38 @@ import { useRef, useState } from "react";
 
 
 const App =()=>{
-  const [list ,setList]=useState([])
-  const [item,setItem]=useState("")
-
-  const AddToList=()=>{
-    list.push(item)
-    setList([...list])
-    
-
-  }
-
-  const RemoveItem =(index)=>{
-    list.splice(index,1)
-    setList([...list])
-
-  }
+  
+  let [FormObj,setFormObj]=useState({
+    fname:"",
+    lname:"",
+    city:"dhaka",
+    gender:"Female"
+  })
   
   return(
-    <div>
+    <div className="container ">
+      <form action="#">
 
-      <table>
-        <tbody>
          
-            {
-              list.length!=0?(
+        <input  value={FormObj.fname} type="text" name="" id="" placeholder="FirstName" /> <br></br>
 
-                list.map((element,index)=>{
-                  return(
-                    <tr key={index}>
+        <input value={FormObj.lname} placeholder="LastName"/><br>
+        </br>
 
-                      <td>{element}</td>
-                      <td> <button onClick={()=> RemoveItem(index)}>remove </button></td>
-                    </tr>
-                  )
+        <select value={FormObj.city}>
+          <option>Chose city</option>
+          <option value="dhaka">Dhaka</option>
+          <option value="mymensingh"> mymen</option>
+        </select>
+        <br></br>
 
-                })
+        <input checked={FormObj.gender==="Male"} type="radio" name ="gender"/>Male
+        <input checked={FormObj.gender=="Female"} type="radio" name="gender" />Female<br>
+        </br>
 
 
-              ):(<tr></tr>)
-            }
-
-          
-        </tbody>
-      </table>
-
- 
-       <input onChange={(e)=>setItem(e.target.value)}  placeholder="item" />
-       <button onClick={AddToList} >Add</button>
-      
+        <button type="submit"> Submit</button>
+      </form>         
 
     </div>
   )
